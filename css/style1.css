@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.rbar{
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.showmenu .rbar{
+    right: 16rem;
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: whitesmoke;
+    box-shadow: .2rem .2rem 2px black;
+    transition: transform 1s;
+}
+
+.showmenu #line1{
+    transform: rotate(45deg) translate(.3rem, .3rem);
+}
+
+.showmenu #line2{
+    transform: rotate(-45deg) translate(.3rem, -.3rem);
+}
+
+.showmenu #line3{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgw{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imgw img{
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 30s;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.inicio{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    align-content: center;
+}
+
+.inicio h1{
+    color: white;
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    text-align: start;
+    text-shadow: .3rem .3rem 3px rgba(0, 0, 0, .3); 
+    margin-bottom: 3rem;
+    text-align: center;
+    animation: inicioani 1s forwards;
+    opacity: 0;
+}
+
+.inicio p{
+    color: whitesmoke;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    animation: inicioani 1s forwards;
+    text-align: initial;
+    opacity: 0;
+}
+
+.inicio button{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: .3rem .3rem 3px rgba(0, 0, 0, .3);
+    box-shadow: .2rem .2rem 2px rgba(0, 0, 0, .2);
+    background: #24C6DC;
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    background: linear-gradient(to right, #514A9D, #24C6DC);     
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 45%;
+    animation: inicioani 1s forwards;
+    opacity: 0;
+}
+
+.inicio button:hover{
+    color: black;
+    box-shadow: .2rem .2rem 2px rgba(0, 0, 0, .4);
+}
+
+@keyframes inicioani{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+.menuside{
+    width: 20rem;
+    height: 100vh;
+    background: #24C6DC;
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    background: linear-gradient(to right, #514A9D, #24C6DC);
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+    flex-basis: 100%;
+}
+
+.showmenu .menuside{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(50% 50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.menu-link{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-shadow: .3rem .3rem 3px rgba(0, 0, 0, .3);
+    margin-bottom: 2rem;
+}
+
+.menu-link:hover{
+    color: black;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, .4);
+    border: none;
+    text-decoration: none;
+}
+
+.social{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social i{
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social i:hover{
+    color: black;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, .4);
+    border: none;
+    text-decoration: none;
+}
+
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.sessao-sobre{
+    background-color: #f5f5f5
+}
+
+.sessao-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-header h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, .2);
+    color:#24C6DC;
+    padding: 5rem;
+    margin-bottom: 2rem;
+}
+
+.sob-header{
+    display: flex;
+    align-items: center;
+}
+
+.sob-header i{
+    font-size: 4rem;
+    color: #24C6DC;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sob-header h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.sob-texto{
+    font-family: 'Oxygen', sans-serif;
+    padding-left: 1rem;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background: #24C6DC;
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    background: linear-gradient(to right, #514A9D, #24C6DC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, .2);
+    padding: 2rem;
+}
+
+.redes a{
+    margin: 0 2rem;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, .2);
+}
+
+.redes ul{
+    display: flex;
+    padding: 2rem;
+}
+
+@media all and (min-width:375px) {
+    .inicio{
+        top: 12%;
+        left: 8%;
+        right: 7%;
+    }
+    .inicio h1{
+        font-size: 2.5rem;
+    }
+    .inicio p{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .inicio button{
+        font-size: 1rem;
+        padding: 1.5rem 2rem;
+        right: 20%;
+    }
+    .sobre{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 15rem);
+        row-gap: 1rem;
+        column-gap: 2rem;
+    }
+    .sessao-sobre{
+        padding-bottom: 25px;
+    }
+    .sessao-header h2{
+        font-size: 2rem;
+        padding: 3rem;
+        margin-bottom: 1rem;
+    }
+    .menu{
+        top: 19%;
+        left: 27%;
+    }
+    .menu-item{
+        margin-bottom: 2rem;
+    }
+    .menuside{
+
+    }
+    .social{
+        justify-content: center;
+        width: 105%;
+    }
+    .social i{
+        width: 5rem;
+        align-items: center;
+    }
+    footer{
+        height: 9rem;
+    }
+    .footer-content{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: -moz-center;
+    }
+    .footer-content p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .redes ul {
+        padding:1rem;
+    }
+}
+@media all and (min-width:1280px){
+    .inicio h1{
+        font-size: 3.5rem;
+    }
+    .inicio p{
+        font-size: 1.5rem;
+        margin-bottom: 10rem;
+    }
+    .inicio button{
+        font-size: 2rem;
+        right: 36%;
+    }
+    .sobre{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 15rem);
+    }
+}
+@media all and (min-width:768px){
+    .inicio{
+        left:10%;
+        right:10%;
+    }
+    .inicio h1{
+        font-size: 4.5rem;
+    }
+    .inicio p{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    .inicio button{
+        font-size: 1.2rem;
+        right: 32%;
+    }
+    .sobre{
+        grid-template-rows: repeat(1, 10rem);
+        row-gap: 3rem;
+    }
+    .redes ul{
+        font-size:50px;
+    }
+}
