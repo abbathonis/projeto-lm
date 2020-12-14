@@ -188,10 +188,10 @@ header {
   text-decoration: none;
 }
 
-form{
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
+form {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
 }
 
 h2 {
@@ -217,7 +217,7 @@ input,
 select,
 textarea,
 button {
-  font-family:"Oxygen", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 1em;
   background-color: whitesmoke;
 }
@@ -263,23 +263,23 @@ fieldset.grupo .campo {
   margin-right: 1em;
 }
 .botao {
-    font-family: "Ubuntu", sans-serif;
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
-    text-shadow: 0.3rem 0.3rem 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.2);
-    background: #24c6dc;
-    background: -webkit-linear-gradient(to right, #514a9d, #24c6dc);
-    background: linear-gradient(to right, #514a9d, #24c6dc);
-    padding: 1.5rem 3rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 0.3rem 0.3rem 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.2);
+  background: #24c6dc;
+  background: -webkit-linear-gradient(to right, #514a9d, #24c6dc);
+  background: linear-gradient(to right, #514a9d, #24c6dc);
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .botao:hover {
-    color: black;
-    box-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
+  color: black;
+  box-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
 }
 .botao,
 select,
