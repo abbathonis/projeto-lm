@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -166,6 +166,126 @@
           </div>
         </div>
       </section>
+      <h2> Entre em contato conosco!</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <fieldset class="grupo">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                style="width: 20em"
+                value=""
+              />
+            </div>
+            <div class="campo">
+              <label for="snome">Sobrenome</label>
+              <input
+                type="text"
+                id="snome"
+                name="snome"
+                style="width: 20em"
+                value=""
+              />
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label>Sexo</label>
+            <label class="checkbox">
+              <input type="radio" name="sexo" value="masculino" /> Masculino
+            </label>
+            <label class="checkbox">
+              <input type="radio" name="sexo" value="feminino" /> Feminino
+            </label>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              style="width: 41em"
+              value=""
+            />
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input
+              type="text"
+              id="telefone"
+              name="telefone"
+              style="width: 20em"
+              value=""
+            />
+          </div>
+
+          <fieldset class="grupo">
+            <div class="campo">
+              <label for="cidade">Cidade</label>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                style="width: 20em"
+                value=""
+              />
+            </div>
+            <div class="campo">
+              <label for="estado">Estado</label>
+              <select name="estado" id="estado">
+                <option value="">--</option>
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amapá">AP</option>
+                <option value="Amazonas">AM</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Espírito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Mato Grosso do SUl">MS</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Paraná">PR</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Rio Grando do Norte">RN</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Rondõnia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Santa Cantarina">SC</option>
+                <option value="São Paulo">SP</option>
+                <option value="Sergipe">SE</option>
+                <option value="Tocantins">TO</option>
+                <option value="Distrito Federal">DF</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              rows="6"
+              style="width: 41em"
+              id="mensagem"
+              name="mensagem"
+            ></textarea>
+          </div>
+
+          <button class="botao submit" type="submit" name="submit">
+            Enviar
+          </button>
+        </fieldset>
+      </form>
       <footer>
         <div class="footer-content">
           <p>Copyright &copy; 2020, Otoniel Neto.</p>
