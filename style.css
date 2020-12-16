@@ -407,7 +407,7 @@ footer{
     padding: 2rem;
 }
 
-@media all and (min-width:375px) {
+@media all and (min-width:360px) {
     .inicio{
         top: 12%;
         left: 8%;
